@@ -69,7 +69,7 @@ a:hover {
   margin: 80px 0;
   display: flex;
   justify-content: space-around;
-  overflow-y: hidden;
+  position: relative;
 }
 
 .card {
@@ -79,6 +79,7 @@ a:hover {
   border-radius: 20px;
   padding: 20px;
   margin: 0 20px;
+  position: relative;
 }
 
 .card div {
@@ -108,4 +109,10 @@ a:hover {
 }
 .card:nth-child(4) {
   background: #80a39c;
+}
+
+.card > img {
+  position: absolute;
+  bottom: -40px;
+  right: -30px;
 }

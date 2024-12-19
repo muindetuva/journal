@@ -62,3 +62,50 @@ a:hover {
   padding: 10px 40px;
   border-radius: 20px;
 }
+
+/* Cards Section */
+
+.cards {
+  margin: 80px 0;
+  display: flex;
+  justify-content: space-around;
+  overflow-y: hidden;
+}
+
+.card {
+  height: 250px;
+  width: 300px;
+  background: gray;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 0 20px;
+}
+
+.card div {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.card div p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.card > p {
+  color: #b8b8b8;
+}
+
+.card:nth-child(1) {
+  background: #623c75;
+}
+
+.card:nth-child(2) {
+  background: #526272;
+}
+.card:nth-child(3) {
+  background: #a38d8d;
+}
+.card:nth-child(4) {
+  background: #80a39c;
+}

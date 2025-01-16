@@ -74,7 +74,7 @@ a:hover {
 
 .card {
   height: 250px;
-  width: 300px;
+  max-width: 250px;
   background: gray;
   border-radius: 20px;
   padding: 20px;
@@ -119,10 +119,46 @@ a:hover {
 
 .menu_icon {
   display: none;
+  cursor: pointer;
 }
 
 /* Only for devices between 0 and 600px */
 @media only screen and (max-width: 600px) {
+  .mobile_nav {
+    display: none;
+    background-color: #fff;
+    flex-direction: column;
+    box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.43);
+    -webkit-box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.43);
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  .mobile_nav a {
+    padding: 10px;
+  }
+
+  .cards {
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    margin: 30px;
+  }
+
+  .leading h1 {
+    font-size: 6vw;
+  }
+  .leading p {
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   nav a:not(:first-child) {
     display: none;
   }
@@ -135,5 +171,14 @@ a:hover {
 
   nav {
     justify-content: space-between;
+  }
+}
+
+/* Above 600px */
+@media only screen and (min-width: 600px) {
+  .cards {
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 30px;
   }
 }

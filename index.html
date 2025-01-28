@@ -1,134 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
 
     <script defer src="script.js"></script>
+  </head>
 
-
-
-</head>
-
-<body>
+  <body>
     <header>
-        <nav>
-            <a class="logo pink" href="/index.html">Journal</a>
+      <nav>
+        <a class="logo pink" href="/index.html">Journal</a>
 
-            <a style="margin-left: auto;" href="/index.html">Home</a>
-            <a href="#">About</a>
-            <a href="#">Features</a>
-            <a href="#">Docs</a>
-            <a href="#">Pricing</a>
-            <a style="margin-left: auto;" href="/register.html" class="pink">Register</a>
-            <a href="#" class="pink login">Log In</a>
+        <a style="margin-left: auto" href="/index.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Features</a>
+        <a href="#">Docs</a>
+        <a href="#">Pricing</a>
+        <a href="/posts.html">Posts</a>
+        <a style="margin-left: auto" href="/register.html" class="pink"
+          >Register</a
+        >
+        <a href="#" class="pink login">Log In</a>
 
-            <svg class="menu_icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-        </nav>
-        <!-- Mobile Nav -->
-        <div class="mobile_nav">
-            <a href="/index.html">Home</a>
-            <a href="#">About</a>
-            <a href="#">Features</a>
-            <a href="#">Docs</a>
-            <a href="#">Pricing</a>
-            <a href="/register.html" class="">Register</a>
-            <a href="#" class="">Log In</a>
-        </div>
-
+        <svg
+          class="menu_icon"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </nav>
+      <!-- Mobile Nav -->
+      <div class="mobile_nav">
+        <a href="/index.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Features</a>
+        <a href="#">Docs</a>
+        <a href="#">Pricing</a>
+        <a href="/posts.html">Posts</a>
+        <a href="/register.html" class="">Register</a>
+        <a href="#" class="">Log In</a>
+      </div>
     </header>
     <main>
-        <!-- Leading Section -->
-        <section class="leading">
+      <!-- Leading Section -->
+      <section class="leading">
+        <h1>
+          Write your daily journal and <br />
+          read them in exciting way
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Necessitatibus illum excepturi sunt saepe aspernatur nemo quasi minus
+          voluptate quibusdam ad?
+        </p>
 
-            <h1>Write your daily journal and <br> read them in exciting way</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus illum excepturi sunt saepe
-                aspernatur nemo quasi minus voluptate quibusdam ad?</p>
-
-            <a onclick="console.log('Getting Started')" href="#">Get Started</a>
-            <!-- <img height="50" src="images/football.png" alt="Football">
+        <a onclick="console.log('Getting Started')" href="#">Get Started</a>
+        <!-- <img height="50" src="images/football.png" alt="Football">
             <img height="50" src="/images/cat.png" alt="Cat">
             <img height="50" src="/images/bicycle.png" alt="bicycle">
             <img height="50" src="/images/bicycle.png" alt="bicycle"> -->
-        </section>
+      </section>
 
-        <!-- Cards sections -->
-        <section class="cards">
+      <!-- Cards sections -->
+      <section class="cards">
+        <div class="card">
+          <div>
+            <p>
+              Cycling and <br />
+              Enjoy the city.
+            </p>
+            <svg
+              height="20"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+              />
+            </svg>
+          </div>
+          <p>2 days ago</p>
+          <img
+            height="200"
+            src="images/ride-bicycle.png"
+            alt="Someone riding a bike"
+          />
+        </div>
 
-            <div class="card">
-                <div>
-                    <p>Cycling and <br> Enjoy the city.</p>
-                    <svg height="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                    </svg>
-                </div>
-                <p>2 days ago</p>
-                <img height="200" src="images/ride-bicycle.png" alt="Someone riding a bike">
-            </div>
+        <div class="card">
+          <div>
+            <p>
+              Street <br />
+              Photography Journal
+            </p>
+            <svg
+              height="20"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+              />
+            </svg>
+          </div>
 
+          <p>2 days ago</p>
+          <img
+            height="200"
+            src="images/photographer.png"
+            alt="Someone riding a bike"
+          />
+        </div>
 
-            <div class="card">
-                <div>
-                    <p>Street <br> Photography Journal</p>
-                    <svg height="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                    </svg>
-                </div>
+        <div class="card">
+          <div>
+            <p>
+              My first trip <br />
+              with my partner
+            </p>
+            <svg
+              height="20"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+              />
+            </svg>
+          </div>
+          <p>2 days ago</p>
+          <img
+            height="200"
+            src="images/travelling.png"
+            alt="Someone riding a bike"
+          />
+        </div>
 
-                <p>2 days ago</p>
-                <img height="200" src="images/photographer.png" alt="Someone riding a bike">
-            </div>
-
-            <div class="card">
-                <div>
-                    <p>My first trip <br> with my partner</p>
-                    <svg height="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                    </svg>
-                </div>
-                <p>2 days ago</p>
-                <img height="200" src="images/travelling.png" alt="Someone riding a bike">
-            </div>
-
-            <div class="card">
-                <div>
-                    <p>First day <br> at the office. <br> Very nervous</p>
-                    <svg height="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                    </svg>
-                </div>
-                <p>2 days ago</p>
-                <img height="200" src="images/office.png" alt="Someone riding a bike">
-            </div>
-        </section>
+        <div class="card">
+          <div>
+            <p>
+              First day <br />
+              at the office. <br />
+              Very nervous
+            </p>
+            <svg
+              height="20"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+              />
+            </svg>
+          </div>
+          <p>2 days ago</p>
+          <img
+            height="200"
+            src="images/office.png"
+            alt="Someone riding a bike"
+          />
+        </div>
+      </section>
     </main>
 
     <script>
-        console.log("Hello There")
+      console.log("Hello There");
     </script>
-
-
-</body>
-
+  </body>
 </html>

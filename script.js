@@ -2,6 +2,8 @@ const menuIcon = document.querySelector(".menu_icon");
 
 const mobileNav = document.querySelector(".mobile_nav");
 
+// menuIcon.addEventListener("click", toggleMobileNav);
+
 menuIcon.addEventListener("click", toggleMobileNav);
 
 function toggleMobileNav() {
